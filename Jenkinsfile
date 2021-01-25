@@ -1,7 +1,7 @@
  node {
    
       stage('Git clone') {
-        git credentialsId: 'git', url: 'https://git-codecommit.us-east-1.amazonaws.com/v1/repos/ks'
+        git 'https://github.com/kigrepo/ks.git'
     }
        stage('clean') {
        sh 'mvn clean'
